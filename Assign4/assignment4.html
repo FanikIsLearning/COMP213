@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAN HOI KIT, Ivan - Assignment4</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../Assign4/style.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <a class="banner" href="https://www.tesla.com/en_CA/" target="_blank">
+                <img class="logo" alt="logo" src="images/centennial.jpg">
+            </a>
+            <h2>Centennial College</h2>
+            <h3>Continuing Education Course/Instructor Evaluation </h3>
+        </header>
+
+        <p>Please read each statement carefully and consider each one individually. Use the <b>computer card</b> to make your
+            choice (use a pencil to fill in the space). Give only <b>one answer</b> for each question. </p>
+
+        <form class="form" action="http://studentweb.cencol.ca/pgignac/results.php" method="post">
+            
+                <legend><h4>Instructor</h4></legend>
+                <p>
+                    <label for="txtFName">How would you rate your instructor's:</label><br>
+                    <p>1. <b>knowledge</b> of subject?</p>
+                    <input id="optEdSec" name="optEd" tabindex="15" type="radio" value="Sec">Secondary
+                    <input id="optEdCol" name="optEd" tabindex="17" type="radio" value="Col">College
+                    <input name="optEd" tabindex="19" type="radio" value="Ugrad">Undergraduate
+                    <input name="optEd" tabindex="21" type="radio" value="Grad">Graduate
+                    <input name="optEd" tabindex="23" type="radio" value="Pgrad">Post Graduate
+                </p>
+                <p>
+                    <label for="txtLName">Last Name:</label>
+                    <input id="txtLName" name="txtLName" size="25" tabindex="3" type="text" required="required">
+                </p>
+                <p>
+                    <label for="txtEmail">Email:</label>
+                    <input id="txtEmail" name="txtEmail" size="30" tabindex="5" type="email"
+                        placeholder="someone@someplace.ca" required="required">
+                </p>
+                <p>
+                    <label for="txtPWD">Create PWD:</label>
+                    <input id="txtPWD" name="txtPWD" size="16" tabindex="7" type="password">
+                </p>
+                <p>
+                    <label for="txtConfirmP">Confirm PWD:</label>
+                    <input id="txtConfirmP" name="txtConfirmP" size="16" tabindex="9" type="password">
+                </p>
+                <p>
+                    <label for="optM">Gender:</label>
+
+                    <input id="optM" name="optGender" tabindex="11" type="radio" value="M">M
+                    <input id="optF" name="optGender" tabindex="13" type="radio" value="F">F
+                </p>
+                <p>
+                    <label for="txtColor">Favorite Color:</label>
+                    <input id="txtColor" name="txtColor" size="25" tabindex="14" type="color">
+                </p>
+         
+            <fieldset>
+                <legend>Education Info:</legend>
+                <p>
+                    <label for="optEdSec">Education:</label>
+
+
+                    <input id="optEdSec" name="optEd" tabindex="15" type="radio" value="Sec">Secondary
+                    <input id="optEdCol" name="optEd" tabindex="17" type="radio" value="Col">College
+                    <input name="optEd" tabindex="19" type="radio" value="Ugrad">Undergraduate
+                    <input name="optEd" tabindex="21" type="radio" value="Grad">Graduate
+                    <input name="optEd" tabindex="23" type="radio" value="Pgrad">Post Graduate
+                </p>
+                <p>
+                    <label for="chkOS">Computer Knowledge:</label>
+
+                    <input id="chkOS" name="chkOS" tabindex="25" type="checkbox" value="OS">OS
+                    <input name="chkNet" tabindex="27" type="checkbox" value="Net">Networking
+                    <input name="chkProg" tabindex="29" type="checkbox" value="Prog">Programming
+                    <input name="chkWeb" tabindex="31" type="checkbox" value="Web">Web Design
+                    <input name="chkDB" tabindex="33" type="checkbox" value="DB">DB
+                </p>
+                <p>
+                    <label for="lstCourses">Choose Courses:</label>
+
+
+                    <select id="lstCourses" name="lstCourses" multiple="multiple" size="4" tabindex="35">
+                        <option value="COMP100">COMP100 Programming I</option>
+                        <option value="COMP125">COMP125 Client Side Web Development</option>
+                        <option value="COMP213">COMP213 Web Interface Design</option>
+                        <option value="COMP229">COMP229 Server Side Development</option>
+                        <option value="GND500">GNED500 Global Citizenship</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="txtStartDate">Start Date:</label>
+                    <input id="txtStartDate" name="txtStartDate" tabindex="36" type="date">
+                </p>
+                <p>
+                    <label for="txtSpecialReq">Special Requirements:</label>
+                    <textarea id="txtSpecialReq" cols="50" name="txtSpecialReq" rows="8" tabindex="37"
+                        placeholder="---Please let us know about any special services you may require (e.g. assistive typing, note taking, etc.)---"></textarea>
+                </p>
+            </fieldset>
+            <p>
+
+                <input name="btnSubmit" tabindex="39" type="submit" value="Complete Registration">
+
+                <input name="btnReset" tabindex="41" type="reset" value="Clear Form">
+            </p>
+
+        </form>
+    </div>
+</body>
+
+</html>
