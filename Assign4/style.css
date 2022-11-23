@@ -54,6 +54,19 @@ footer {
     color: #44433E;;
 }
 
+.home {
+    color: #44433E;
+    border-style: solid;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
 .logo {
     margin-left: auto;
     margin-right: auto;
@@ -87,6 +100,10 @@ footer {
 .button{
     padding: 10px;
     font-size: 20px;
+    color: #44433E;
+    border-style: solid;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .url{
@@ -153,7 +170,7 @@ footer {
 
 .centennial:hover{
     color: #D4DF37;
-    text-decoration: none;
+    text-decoration:underline;
 }
 
 .title:hover{
@@ -164,6 +181,21 @@ footer {
 h2:hover{
     color: #D4DF37;
 }
+
+.home:hover {
+    background-color: #D4DF37;
+    color: #44433E;
+    border-color: #44433E;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #D4DF37;
+    color: #44433E;
+    border-color: #44433E;
+    font-weight: bold;
+}
+
 
 @media only screen and (min-width: 600px) {
 
