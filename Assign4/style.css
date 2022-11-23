@@ -1,6 +1,6 @@
 body {
     font-family: Verdana;
-    color: black;
+    color: #44433E;;
     background-color: white;
    
 }
@@ -13,12 +13,13 @@ div {
 
 hr {
     border-style: solid;
-    border-color: #C2A242;
+    border-color: #44433E;;
     border-width: 4px;
 }
 
-ul {
-    list-style-image: url('../Assign2/images/orange.gif')
+li{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
@@ -32,13 +33,25 @@ h3{
     margin-bottom: 0px;
 }
 
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #44433E;
+    border-radius: 4px;
+    background-color: #f8f8f8c7;
+    font-size: 16px;
+    resize: none;
+  }
+
 footer {
     font-size: 16px;
 }
 
 .banner {
     text-decoration: none;
-    color: black;
+    color: #44433E;;
 }
 
 .logo {
@@ -53,8 +66,117 @@ footer {
     border-color: #454547;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    background-color: #44433E;
+    color: white;
+    padding: 8px 5px;
+    font-size: 24px;
+}
+
+.option{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.url{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.centennial{
+    text-decoration: none;
+    color: #44433E;
+}
+
+/*input (line style)*/
+.style-line {
+    width: 80%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 16px;
+}
+
+.style-shortline {
+    width: 20%;
+    padding: 2px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.style-line-11 {
+    width: 63%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 16px;
+}
+
+.style-line-12 {
+    width: 68.2%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 16px;
+}
+
+
 /* hover */
 .banner:hover{
     opacity: 0.8;
     text-decoration: none;
+}
+
+.centennial:hover{
+    color: #D4DF37;
+    text-decoration: none;
+}
+
+.title:hover{
+    background-color: #D4DF37;;
+    color: #44433E;
+}
+
+h2:hover{
+    color: #D4DF37;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For mobile: */
+    footer {
+        font-size: 6px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    /* For desktop: */
+    footer {
+        font-size: 12px;
+    }
 }

@@ -17,102 +17,188 @@
             <h3>Continuing Education Course/Instructor Evaluation </h3>
         </header>
 
-        <p>Please read each statement carefully and consider each one individually. Use the <b>computer card</b> to make your
+        <p>Please read each statement carefully and consider each one individually. Use the <b>computer card</b> to make
+            your
             choice (use a pencil to fill in the space). Give only <b>one answer</b> for each question. </p>
 
         <form class="form" action="http://studentweb.cencol.ca/pgignac/results.php" method="post">
-
-                <legend><h4>Course Name/Code: </h4></legend>
-                <input id="txtLName" name="txtLName" size="25" tabindex="3" type="text" required="required">
-                <legend><h4>Instructor</h4></legend>
-                <p>
-                    <label for="txtFName">How would you rate your instructor's:</label><br>
-                    <p>1. <b>knowledge</b> of subject?</p>
-                    <input id="optEdSec" name="optEd" tabindex="15" type="radio" value="Sec">Secondary
-                    <input id="optEdCol" name="optEd" tabindex="17" type="radio" value="Col">College
-                    <input name="optEd" tabindex="19" type="radio" value="Ugrad">Undergraduate
-                    <input name="optEd" tabindex="21" type="radio" value="Grad">Graduate
-                    <input name="optEd" tabindex="23" type="radio" value="Pgrad">Post Graduate
-                </p>
-                <p>
-                    <label for="txtLName">Last Name:</label>
-                    <input id="txtLName" name="txtLName" size="25" tabindex="3" type="text" required="required">
-                </p>
-                <p>
-                    <label for="txtEmail">Email:</label>
-                    <input id="txtEmail" name="txtEmail" size="30" tabindex="5" type="email"
-                        placeholder="someone@someplace.ca" required="required">
-                </p>
-                <p>
-                    <label for="txtPWD">Create PWD:</label>
-                    <input id="txtPWD" name="txtPWD" size="16" tabindex="7" type="password">
-                </p>
-                <p>
-                    <label for="txtConfirmP">Confirm PWD:</label>
-                    <input id="txtConfirmP" name="txtConfirmP" size="16" tabindex="9" type="password">
-                </p>
-                <p>
-                    <label for="optM">Gender:</label>
-
-                    <input id="optM" name="optGender" tabindex="11" type="radio" value="M">M
-                    <input id="optF" name="optGender" tabindex="13" type="radio" value="F">F
-                </p>
-                <p>
-                    <label for="txtColor">Favorite Color:</label>
-                    <input id="txtColor" name="txtColor" size="25" tabindex="14" type="color">
-                </p>
-         
-            <fieldset>
-                <legend>Education Info:</legend>
-                <p>
-                    <label for="optEdSec">Education:</label>
-
-
-                    <input id="optEdSec" name="optEd" tabindex="15" type="radio" value="Sec">Secondary
-                    <input id="optEdCol" name="optEd" tabindex="17" type="radio" value="Col">College
-                    <input name="optEd" tabindex="19" type="radio" value="Ugrad">Undergraduate
-                    <input name="optEd" tabindex="21" type="radio" value="Grad">Graduate
-                    <input name="optEd" tabindex="23" type="radio" value="Pgrad">Post Graduate
-                </p>
-                <p>
-                    <label for="chkOS">Computer Knowledge:</label>
-
-                    <input id="chkOS" name="chkOS" tabindex="25" type="checkbox" value="OS">OS
-                    <input name="chkNet" tabindex="27" type="checkbox" value="Net">Networking
-                    <input name="chkProg" tabindex="29" type="checkbox" value="Prog">Programming
-                    <input name="chkWeb" tabindex="31" type="checkbox" value="Web">Web Design
-                    <input name="chkDB" tabindex="33" type="checkbox" value="DB">DB
-                </p>
-                <p>
-                    <label for="lstCourses">Choose Courses:</label>
-
-
-                    <select id="lstCourses" name="lstCourses" multiple="multiple" size="4" tabindex="35">
-                        <option value="COMP100">COMP100 Programming I</option>
-                        <option value="COMP125">COMP125 Client Side Web Development</option>
-                        <option value="COMP213">COMP213 Web Interface Design</option>
-                        <option value="COMP229">COMP229 Server Side Development</option>
-                        <option value="GND500">GNED500 Global Citizenship</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="txtStartDate">Start Date:</label>
-                    <input id="txtStartDate" name="txtStartDate" tabindex="36" type="date">
-                </p>
-                <p>
-                    <label for="txtSpecialReq">Special Requirements:</label>
-                    <textarea id="txtSpecialReq" cols="50" name="txtSpecialReq" rows="8" tabindex="37"
-                        placeholder="---Please let us know about any special services you may require (e.g. assistive typing, note taking, etc.)---"></textarea>
-                </p>
-            </fieldset>
             <p>
-
-                <input name="btnSubmit" tabindex="39" type="submit" value="Complete Registration">
-
-                <input name="btnReset" tabindex="41" type="reset" value="Clear Form">
+            <div class="container">
+                <label><b>Course Name/Code:</b> </label>
+                <input id="txtCseName" name="txtCseName" size="25" tabindex="0" type="text" required="required"
+                    class="style-line">
+            </div>
+            <div class="container">
+                <label><b>Course Name/Code:</b> </label>
+                Fall<input id="optFall" name="optCse" tabindex="1" type="radio" value="Fall">
+                Winter<input id="optWin" name="optCse" tabindex="2" type="radio" value="Win">
+                Spring/Summer<input id="optSpr" name="optCse" tabindex="3" type="radio" value="Spr">
+                <label><b>Year:</b> </label>
+                <input id="txtYear" name="txtYear" size="25" tabindex="4" type="text" required="required"
+                    class="style-shortline ">
+            </div>
+            <div class="container">
+                <label><b>Instructor:</b> </label>
+                <input id="txtInstructor" name="txtInstructor" size="5" tabindex="5" type="text" required="required"
+                    class="style-line">
+            </div>
             </p>
 
+            <div class="title">INSTRUCTOR</div>
+            <p>How would you rate your instructor's:</p>
+            <ol>
+                <li>
+                    <b>knowledge</b> of subject?
+                    <div class="option">
+                        (a) Excellent<input id="optSubExe" name="optSub" tabindex="6" type="radio" value="Excellent">
+                        (b) Good<input id="optSubGd" name="optSub" tabindex="7" type="radio" value="Good">
+                        (c) Fair<input id="optSubFair" name="optSub" tabindex="8" type="radio" value="Fair">
+                        (d) Not Satisfactory<input id="optSubFac" name="optSub" tabindex="9" type="radio"
+                            value="Satisfactory">
+                    </div>
+                </li>
+                <li>
+                    <b>helpfulness</b>
+                    <div class="option">
+                        (a) Excellent<input id="optHelpExe" name="optHelp" tabindex="10" type="radio" value="Excellent">
+                        (b) Good<input id="optHelpGd" name="optHelp" tabindex="11" type="radio" value="Good">
+                        (c) Fair<input id="optHelpFair" name="optHelp" tabindex="12" type="radio" value="Fair">
+                        (d) Not Satisfactory<input id="optHelpFac" name="optHelp" tabindex="13" type="radio"
+                            value="Satisfactory">
+                    </div>
+                </li>
+                <li>
+                    <b>courtesy and respect</b> for all students?
+                    <div class="option">
+                        (a) Excellent<input id="optCrtExe" name="optCrt" tabindex="14" type="radio" value="Excellent">
+                        (b) Good<input id="optCrtGd" name="optCrt" tabindex="15" type="radio" value="Good">
+                        (c) Fair<input id="optCrtFair" name="optCrt" tabindex="16" type="radio" value="Fair">
+                        (d) Not Satisfactory<input id="optCrtFac" name="optCrt" tabindex="17" type="radio"
+                            value="Satisfactory">
+                    </div>
+                </li>
+                <li>
+                    <b>communication</b> skills?
+                    <div class="option">
+                        (a) Excellent<input id="optCommExe" name="optComm" tabindex="18" type="radio" value="Excellent">
+                        (b) Good<input id="optCommGd" name="optComm" tabindex="19" type="radio" value="Good">
+                        (c) Fair<input id="optCommFair" name="optComm" tabindex="20" type="radio" value="Fair">
+                        (d) Not Satisfactory<input id="optCommFac" name="optComm" tabindex="21" type="radio"
+                            value="Satisfactory">
+                    </div>
+                </li>
+                <li>
+                    overall <b>performance</b>?
+                    <div class="option">
+                        (a) Excellent<input id="optPerExe" name="optPer" tabindex="22" type="radio" value="Excellent">
+                        (b) Good<input id="optPerGd" name="optPer" tabindex="23" type="radio" value="Good">
+                        (c) Fair<input id="optPerFair" name="optPer" tabindex="24" type="radio" value="Fair">
+                        (d) Not Satisfactory<input id="optPerFac" name="optPer" tabindex="25" type="radio"
+                            value="Satisfactory">
+                    </div>
+                </li>
+            </ol>
+
+            <div class="title">COURSE</div>
+            <ol start="6">
+                <li>
+                    How would you rate the <b>course materials</b>?
+                    <div class="option">
+                        (a) Excellent<input id="optCseMatExe" name="optCseMat" tabindex="26" type="radio"
+                            value="Excellent">
+                        (b) Good<input id="optCseMatGd" name="optCseMat" tabindex="27" type="radio" value="Good">
+                        (c) Fair<input id="optCseMatFair" name="optCseMat" tabindex="28" type="radio" value="Fair">
+                        (d) Not Satisfactory<input id="optCseMatFac" name="optCseMat" tabindex="29" type="radio"
+                            value="Satisfactory">
+                    </div>
+                </li>
+                <li>
+                    How much did this course meet your <b>expectations</b>?
+                    <div class="option">
+                        (a) Excellent<input id="optCseExpExe" name="optCseExp" tabindex="30" type="radio"
+                            value="Excellent">
+                        (b) Good<input id="optCseExpGd" name="optCseExp" tabindex="31" type="radio" value="Good">
+                        (c) Fair<input id="optCseExpFair" name="optCseExp" tabindex="32" type="radio" value="Fair">
+                        (d) Not Satisfactory<input id="optCseExpFac" name="optCseExp" tabindex="33" type="radio"
+                            value="Satisfactory">
+                    </div>
+                </li>
+                <li>
+                    How would you rate this course <b>(overall)</b>?
+                    <div class="option">
+                        (a) Excellent<input id="optCseOverallExe" name="optCseOverall" tabindex="34" type="radio"
+                            value="Excellent">
+                        (b) Good<input id="optCseOverallGd" name="optCseOverall" tabindex="35" type="radio"
+                            value="Good">
+                        (c) Fair<input id="optCseOverallFair" name="optCseOverall" tabindex="36" type="radio"
+                            value="Fair">
+                        (d) Not Satisfactory<input id="optCseOverallFac" name="optCseOverall" tabindex="37" type="radio"
+                            value="Satisfactory">
+                    </div>
+                </li>
+            </ol>
+
+            <div class="title">GENERAL INFORMATION</div>
+            <ol start="9">
+                <li>
+                    Was the <b>course outline</b> reviewed/explained at the beginning of your course?
+                    <div class="option">
+                        Yes<input id="chkCseOutYes" name="chkCseOut" tabindex="38" type="checkbox" value="Yes">
+                        No<input id="chkCseOutNo" name="chkCseOut" tabindex="39" type="checkbox" value="No">
+                        Not Sure<input id="chkCseOutNotSure" name="chkCseOut" tabindex="40" type="checkbox"
+                            value="NotSure">
+                    </div>
+                </li>
+                <li>
+                    Would you <b>recommend</b> this course to a friend with the same interests?
+                    <div class="option">
+                        Yes<input id="chkRecommendYes" name="chkRecommend" tabindex="41" type="checkbox" value="Yes">
+                        No<input id="chkRecommendNo" name="chkRecommend" tabindex="42" type="checkbox" value="No">
+                        Not Sure<input id="chkRecommendNotSure" name="chkRecommend" tabindex="43" type="checkbox"
+                            value="NotSure">
+                    </div>
+                </li>
+            </ol>
+            <div class="title">ANY OTHER COMMENTS </div>
+            <ol start="11">
+                <li>
+                    <label>What is the <b>best thing</b> about this course? </label>
+                    <input id="txtBstTg" name="txtBstTg" size="25" tabindex="44" type="text" required="required"
+                        class="style-line-11">
+                </li>
+
+                <li>
+                    <label>How could we <b>improve</b> this course? </label>
+                    <input id="txtImprove" name="txtImprove" size="25" tabindex="45" type="text" required="required"
+                        class="style-line-12">
+                </li>
+                <li>
+                    <label for="txtOthers">Others:</label>
+                    <textarea id="txtOthers" cols="50" name="txtOthers" rows="8" tabindex="46"
+                        placeholder="---Please leave us a comments!---"></textarea>
+
+                </li>
+            </ol>
+            <h3>Thank you! We pay attention to your feedback! </h3>
+            <div class="url">
+                <div>Web: <a class="centennial" href="https://www.centennialcollege.ca/continuing_education"
+                        target="_blank">www.centennialcollege.ca/continuing_education</a>
+                </div>
+                <div>Email: <a class="centennial" href="mailto:continuingeducation@centennialcollege.ca"
+                    target="_blank">continuingeducation@centennialcollege.ca</a>
+            </div>
+            </div>
+
+            <div class="container">
+                <input name="btnSubmit" tabindex="99" type="submit" value="Complete Registration" class="button">
+                <input name="btnReset" tabindex="100" type="reset" value="Clear Form" class="button">
+            </div>
+
         </form>
+        <hr>
+        <footer>
+            <h5>&copy; Copyright FAN HOI KIT - ID: 301249275 - COMP213 - Fall 2022</h5>
+        </footer>
     </div>
 </body>
 
