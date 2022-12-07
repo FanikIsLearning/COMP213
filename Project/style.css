@@ -7,27 +7,17 @@ body {
 }
 
 header {
-    background-color: #D0191D;
+    background-color: #CE1714;
     font-size: 16px;
     margin: -10px -20px 0 -10px;
     color: white;
+    padding: 0px;
 }
 
 div {
     width: 1312px;
     margin-left: auto;
     margin-right: auto;
-}
-
-hr {
-    border-style: solid;
-    width: 100%;
-    border-color: #C2A242;
-    border-width: 4px;
-}
-
-ul {
-    list-style-image: url('')
 }
 
 h4 {
@@ -112,8 +102,8 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #D0191D;
-    background-color: #D0191D;
+    background-color: #CE1714;
+    height: 56px;
 }
 
 .buttons li {
@@ -363,4 +353,20 @@ nav {
     display: flex;
     justify-content: center;
 
+}
+
+.information{
+    width: 260px;
+    height: 166px;
+    padding: 15px;
+}
+
+.house-price{
+    font-size: 1.6rem;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+    display: block;
+    white-space: nowrap;
 }
