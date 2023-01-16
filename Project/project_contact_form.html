@@ -41,16 +41,18 @@
 
     <div>
         <div class="navbar">
-            <div class="navbar-item"><a href="../index.html" target="_blank" class="button-type">Index</a></div>
+            <div class="navbar-item"><a href="../Project/project.html" class="button-type-a">Home</a></div>
             <div class="navbar-item"><a href="../Project/project_properties.html"
-                    class="button-type">Properties<sup>®</sup></a></div>
-            <div class="navbar-item"><a href="../Project/project_sitemap.html" class="button-type">Site
+                    class="button-type-a">Properties<sup>®</sup></a></div>
+            <div class="navbar-item"><a href="../Project/project_sitemap.html" class="button-type-a">Site
                     Map</a></div>
-            <div class="navbar-item"><a href="../Project/project_contact_form.html" class="button-type">Contact Form</a>
+            <div class="navbar-item"><a href="../Project/project_contact_form.html" class="button-type-a">Contact Form</a>
             </div>
-            <div class="navbar-last"><img src="../Project/images/searches.svg" class="search" alt="search"><img
+            <div class="navbar-last"><a href="../index.html" class="button-type-a"><img
+                        src="../Project/images/searches.svg" class="search" alt="search"></a><img
                     src="../Project/images/heart.svg" class="heart" alt="heart"></div>
         </div>
+
 
         <div class="agent-name">
             <span class="agent">Contact Us</span>
@@ -61,58 +63,59 @@
                 <p>
                     <span class="contact-container">
                         <label><b>First Name:</b> </label>
-                        <input id="txtCseName" name="txtCseName" size="25" tabindex="0" type="text" required="required"
+                        <input id="firstName" name="firstName" size="25" tabindex="0" type="text" required="required"
                             class="style-line">
                     </span>
                     <span class="contact-container">
                         <label><b>Last Name:</b> </label>
-                        <input id="txtCseName" name="txtCseName" size="25" tabindex="1" type="text" required="required"
+                        <input id="lastName" name="lastName" size="25" tabindex="1" type="text" required="required"
                             class="style-line">
                     </span>
                     <span class="contact-container">
                         <label><b>Email:</b> </label>
-                        <input id="txtCseName" name="txtCseName" size="25" tabindex="2" type="text" required="required"
-                            class="style-line">
+                        <input id="contactEmail" name="contactEmail" size="25" tabindex="2" type="text"
+                            required="required" class="style-line">
                     </span>
                     <span class="contact-container">
                         <label><b>Phone:</b> </label>
-                        <input id="txtCseName" name="txtCseName" size="25" tabindex="3" type="text" required="required"
-                            class="style-line">
+                        <input id="contactNumber" name="contactNumber" size="25" tabindex="3" type="text"
+                            required="required" class="style-line">
                     </span>
 
-                    <span class="contact-container">
-                        <ol>
-                            <li>
-                                What kind of properties are you interested in?
-                                <span class="contact-option">
-                                    <span>Residential<input id="optSubExe" name="optSub" tabindex="3" type="radio"
-                                            value="Residential"></span>
-                                    <span>Commercial<input id="optSubGd" name="optSub" tabindex="4" type="radio"
-                                            value="Good"></span>
-                                </span>
-                            </li>
-                            <li>
-                                Type of property?
-                                <span class="contact-option">
-                                    <span>Condominium<input id="optHelpExe" name="optHelp" tabindex="5" type="radio"
-                                            value="Excellent"></span>
-                                    <span>House<input id="optHelpGd" name="optHelp" tabindex="6" type="radio"
-                                            value="Good"></span>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="contact-container">
-                                    <span><label>Number of Bathrooms: </label>
-                                    <input id="txtCseName" name="txtCseName" size="25" tabindex="3" type="text" required="required"
-                                        class="style-shortline"></span>
-                     
-                                    <span><label>Number of Bedrooms: </label>
-                                    <input id="txtCseName" name="txtCseName" size="25" tabindex="3" type="text" required="required"
-                                        class="style-shortline"></span>
-                                </span>
-                            </li>
-                        </ol>
-                    </span>
+
+                <ol>
+                    <li>
+                        What kind of properties are you interested in?
+                        <span class="contact-option">
+                            <span>Residential<input id="optSubExe" name="optSub" tabindex="3" type="radio"
+                                    value="Residential"></span>
+                            <span>Commercial<input id="optSubGd" name="optSub" tabindex="4" type="radio"
+                                    value="Good"></span>
+                        </span>
+                    </li>
+                    <li>
+                        Type of property?
+                        <span class="contact-option">
+                            <span>Condominium<input id="optHelpExe" name="optHelp" tabindex="5" type="radio"
+                                    value="Condominium"></span>
+                            <span>House<input id="optHelpGd" name="optHelp" tabindex="6" type="radio"
+                                    value="House"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="contact-container">
+                            <span><label>Number of Bathrooms: </label>
+                                <input id="numOfBaths" name="numOfBaths" size="25" tabindex="3" type="text"
+                                    required="required" class="style-shortline"></span>
+
+                            <span><label>Number of Bedrooms: </label>
+                                <input id="numOfBeds" name="numOfBeds" size="25" tabindex="3" type="text"
+                                    required="required" class="style-shortline"></span>
+                        </span>
+                    </li>
+                </ol>
+
+
                 <ol start="4">
                     <li>
                         What is your price range?
@@ -126,7 +129,7 @@
                         </div>
                     </li>
                 </ol>
-        
+
                 <ol start="5">
                     <li>
                         <label for="txtOthers">Other Enquiries:</label>
@@ -139,7 +142,8 @@
 
                 <span class="contact-container">
                     <input name="btnSubmit" tabindex="99" type="submit" value="Apply" class="contact-button">
-                    <a name="btnSubmit" href="mailto:hfan15@my.centennialcollege.ca" class="contact-button">Send Email</a>
+                    <a name="btnSubmit" href="mailto:hfan15@my.centennialcollege.ca" class="contact-button">Send
+                        Email</a>
                     <input name="btnReset" tabindex="100" type="reset" value="Clear Form" class="contact-button">
                 </span>
 
@@ -148,15 +152,27 @@
         </div>
 
 
-
-
         <footer>
+
             <div class="footer-container-a">
                 <span>Give me A+</span>
                 <span>static website</span>
                 <span>final project</span>
             </div>
             <div class="footer-container-b">
+                <span class="footer-container-b-item-a">For academic purpose only
+                    <span class="space"></span>
+                    <img src="../Project/images/apple_app_store.svg" alt="apple">
+                    <span class="space">
+                    </span><img src="../Project/images/google_play.svg" alt="google">
+                </span>
+                <span class="footer-container-b-item-b">Stay Connected
+                    <span class="space"></span>
+                    <img src="../Project/images/icon-facebook-transparent.svg" class="social-logo" alt="fb">
+                    <img src="../Project/images/icon-instagram-transparent.svg" class="social-logo" alt="instagram">
+                    <img src="../Project/images/icon-pinterest-transparent.svg" class="social-logo" alt="pin">
+                    <img src="../Project/images/icon-twitter-transparent.svg" class="social-logo" alt="twitter">
+                </span>
             </div>
             <h5>&copy; Copyright FAN HOI KIT - ID: 301249275 - COMP213 - Fall 2022</h5>
         </footer>

@@ -274,7 +274,7 @@ textarea {
     width: 50%;
 }
 
-.peter {
+.ivan {
     max-width: 255px !important;
 }
 
@@ -331,6 +331,7 @@ textarea {
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
     margin-bottom: 20px;
+    font-size:
 }
 
 .listing-card-container{
@@ -362,9 +363,42 @@ textarea {
     width: 290px;
 }
 
+.listing-card-item-c{
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    border-radius: 30px;
+    background: #b1b1b1;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.listing-card-item-d{
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    border-radius: 30px;
+    background: #CE1714;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 40px;
+    opacity: 0.85;
+}
 .button-type{
     text-decoration: none;
     color: #000;
+}
+
+.button-type-a{
+    text-decoration: none;
+    color: #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .like{
@@ -478,6 +512,29 @@ textarea {
     color: white;
     margin: 0;
     padding: 10px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.footer-container-b-item-a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-container-b-item-b{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-logo{
+    height: 41px;
+    padding-right: 10px;
+}
+
+.space{
+    width: 30px;
 }
 
 .footer-b{
@@ -660,6 +717,22 @@ ol{
     color: white;
 }
 
+.black-l{
+    font-size:large;
+    font-weight: bold;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site-button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /*hover*/
 
 .grid-item-left:hover, .grid-item-right:hover {
@@ -667,16 +740,10 @@ ol{
     transition: 0.3s;
 }
 
-.listing-card-item:hover {
+.listing-card-item:hover, .listing-card-item-c:hover, .listing-card-item-d:hover, .contact-button:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     cursor: pointer;
-}
-
-.contact-button:hover {
-    cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
 }
 
 @media only screen and (min-width: 600px) {
